@@ -48,7 +48,7 @@ How It Works
 ### Step 3 - Start the master server
   At the base dir of the project, use the command to execute the master server.
 
-    python masterserver.py
+    python ./pythontest/masterserver.py
 
   Then you will see the message on the screen as below:
 
@@ -87,15 +87,21 @@ How It Works
 
 Test
 ----------
-  For testing, please use shell. The testing file is ./pythontest/ApiUnit/tests.py.
+  The testing file are **./pythontest/ApiUnit/tests.py, ./pythontest/ApiUnit/tests2.py**. The test.py is for test without run master server. The test2.py is for test with master server.
+  You can use the commands in the shell to do the test.
+
+    python manage.py test pythontest.ApiUnit.tests
+    python manage.py test pythontest.ApiUnit.tests2
+
+  **Notice: Before you use the second command, you should start the master server first. (please see step 3 of section "How It Works".**
 
 
 Change Log
 ---------------
   |  Date      |  Change Log Content    |
   |:-----------|:-----------------------|
-  | 03/22/2017 |  Add pythontest.ApiUnit.tests  |
-  |:-----------|:-----------------------|
+  | 03/22/2017 |  Add pythontest.ApiUnit.tests part, and add two files. (./pythontest/ApiUnit/tests.py, ./pythontest/ApiUnit/tests2.py ) |
+
 
 Contact Me
 ------------------------------------------------
