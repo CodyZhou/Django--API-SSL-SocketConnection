@@ -6,13 +6,14 @@
 # @Software: PyCharm
 # @Description:
 #   
-#   
+#
+from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
 
 
 class MasterServerTests2(APITestCase):
-    url = 'http://localhost:8000/api/master/'
+    url = reverse('API:master_server_run')
     data_valid = {"command":"run","message": "This is a test from client!"}
 
     def test_post_data_valid(self):

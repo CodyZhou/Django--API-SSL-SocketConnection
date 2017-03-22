@@ -7,14 +7,15 @@
 # @Description:
 #
 #
-
+from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
 
 
 class MasterServerTests(APITestCase):
 
-    url = 'http://localhost:8000/api/master/'
+    url = reverse('API:master_server_run')
+    # url = 'http://localhost:8000/api/master/'
     data_no_command = {"command":"","message":""}
     data_invalid_command = {"command":"testcommand","message":""}
     data_no_message = {"command":"run","message": ""}
