@@ -83,7 +83,9 @@ How It Works
     {
         "result": "successful"
     }
-	
+
+### Step 6 - Check Log File
+  At the base dir, you can check the log file **./master_server_recv_message.txt** to confirm the message from client was written into the file.
 
 Test
 ----------
