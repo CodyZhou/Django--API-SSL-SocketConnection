@@ -10,3 +10,14 @@
 [03/17/2017 09:47:06] From ('127.0.0.1', 59986) get message: This is a test information! 
 [03/17/2017 12:15:02] From ('127.0.0.1', 61793) get message: This is a test information from clients! 
 [03/17/2017 15:18:18] From ('127.0.0.1', 49365) get message: test information! 
+[03/22/2017 10:47:27] From ('127.0.0.1', 55618) get message: Test information! 
+[03/22/2017 10:48:39] From ('127.0.0.1', 55628) get message:  
+[03/22/2017 11:55:00] From ('127.0.0.1', 56361) get message: This is a test 
+[03/22/2017 11:55:27] From ('127.0.0.1', 56364) get message: This is a test from client! 
+[03/22/2017 11:55:27] From ('127.0.0.1', 56365) get message: This is a test from client! 
+[03/22/2017 11:56:23] From ('127.0.0.1', 56367) get message: This is a test from client! 
+[03/22/2017 11:56:23] From ('127.0.0.1', 56368) get message: This is a test from client! 
+[03/22/2017 11:57:57] From ('127.0.0.1', 56369) get message: This is a test from client! 
+[03/22/2017 11:57:57] From ('127.0.0.1', 56370) get message: This is a test from client! 
+[03/22/2017 11:58:21] From ('127.0.0.1', 56371) get message: This is a test from client! 
+[03/22/2017 11:58:21] From ('127.0.0.1', 56372) get message: This is a test from client! 

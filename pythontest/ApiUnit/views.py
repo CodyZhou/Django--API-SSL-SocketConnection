@@ -31,16 +31,21 @@ class MasterServerView(APIView):
             if command is None:
                 return Response(serializer.errors, status=status.HTTP_401_UNAUTHORIZED)
 
-            # Send command to server
-            message = serializer.data.get('message', None)
-            if message is None:
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
             result = dict()
 
-            client = Minion()
-            client.set_message(message)
-            result['result'] = client.run()
+            # Send command to server
+            message = serializer.data.get('message', None)
+            if message is None or len(message) <= 0:
+                result['errorMessage'] = 'Can not get message, please check it!'
+                return Response(result, status=status.HTTP_400_BAD_REQUEST)
+
+            try:
+                client = Minion()
+                client.set_message(message)
+                result['result'] = client.run()
+            except:
+                result['errorMessage'] = 'Can not send data to master server!'
+                return Response(result, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
             print(result)
 
