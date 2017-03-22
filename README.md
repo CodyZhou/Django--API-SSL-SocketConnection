@@ -85,6 +85,18 @@ How It Works
     }
 	
 
+Test
+----------
+  For testing, please use shell. The testing file is ./pythontest/ApiUnit/tests.py.
+
+
+Change Log
+---------------
+  |  Date      |  Change Log Content    |
+  |:-----------|:-----------------------|
+  | 03/22/2017 |  Add pythontest.ApiUnit.tests  |
+  |:-----------|:-----------------------|
+
 Contact Me
 ------------------------------------------------
   Email: codysbusiness050917@gmail.com

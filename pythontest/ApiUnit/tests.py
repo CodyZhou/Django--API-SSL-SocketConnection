@@ -1,19 +1,13 @@
-# from rest_framework.test import APIRequestFactory
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# @Time    : 3/22/2017 11:14 PM
+# @Author  : Cody Zhou
+# @File    : tests2.py
+# @Software: PyCharm
+# @Description:
 #
-# from pythontest import settings
-# from django.core.management import setup_environ
 #
-#
-# TEST_URL = 'http://localhost:8000/api/master/'
-#
-# factory = APIRequestFactory()
-# request = factory.get(TEST_URL)
-#
-# print(request)
-#
-# assert request.status_code == 200
 
-from django.urls import reverse
 from rest_framework import status
 from rest_framework.test import APITestCase
 
@@ -78,17 +72,6 @@ class MasterServerTests(APITestCase):
         print(reponse.content)
         self.assertEqual(reponse.status_code, status.HTTP_500_INTERNAL_SERVER_ERROR)
         self.assertEqual(reponse.content.decode('utf8'), '{"errorMessage":"Can not send data to master server!"}')
-
-    def test_post_data_valid(self):
-        """
-        Used to test send a valid data, the master server does not run, everything is working.
-        Notice: this method can not do the test at the same time with method test_post_master_server_no_run().
-            Because this method need run master server first.
-        """
-        reponse = self.client.post(self.url, data=self.data_valid, format='json')
-        # print(reponse.content)
-        self.assertEqual(reponse.status_code, status.HTTP_200_OK)
-        self.assertEqual(reponse.content.decode('utf8'), '{"result":"successful"}')
 
 
 if __name__ == '__main__':
