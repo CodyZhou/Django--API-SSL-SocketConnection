@@ -1,4 +1,4 @@
-Django -- API-SSL-Socket
+Django -- API-SSL-SocketConnection
 ===================================
 Description
 ---------------------------------
