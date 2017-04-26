@@ -1,8 +1,8 @@
-Python Test Project
+Django -- API-SSL-Socket
 ===================================
 Description
 ---------------------------------
-  This is a Python Project for Test. It is use Python + Django + RESTful framework to build a REST Api for clients. This is a client/server framework. When clients get some seriously problems, they can send a JSON error message to this master server through the REST Api, then the api could check the informaiton from clients and send the information (OR command) to the master server through socket connection, then the master server can write the error message to a file for checking. (It is means that you can sepreate the api and the master server, deploy them on different servers.) The communication between the master server and the api is encrypted by a pair of ssh key (Public Key / Private Key) with Python PyCryptodome library. 
+This is a Python Project for Test. It is use Python + Django + RESTful framework to build a REST Api with an SSL socket connection client/server framework. When clients get some seriously problems, they can send a JSON error message to the master server through the REST Api, then the api could check the informaiton from clients and send the information (OR command) to the master server through SSL socket connection, then the master server can write the error message to a file for checking. (It is means that you can sepreate the api and the master server, deploy them on different servers.) The communication between the master server and the api is encrypted by a pair of ssh key (Public Key / Private Key) with Python PyCryptodome library. 
   
   
 Installation
